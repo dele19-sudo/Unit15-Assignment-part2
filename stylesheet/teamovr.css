@@ -12,6 +12,11 @@ body{
     padding:10px;
 }
 
+.pagetitle{
+    text-align:center;
+    padding:30px;
+}
+
 /* ================= TOP SECTION ================= */
 
 .top-section{
@@ -26,9 +31,9 @@ body{
 
 .large-image{
     width:55%;
-    height:250px;
+    /* height:450px; */
     border:1px solid #999;
-    background:white;
+    /* background:white; */
 }
 
 .large-image img{
