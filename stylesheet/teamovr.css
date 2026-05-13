@@ -1,0 +1,165 @@
+/* ================= GLOBAL ================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f2f2f2;
+    font-family:Arial, sans-serif;
+    padding:10px;
+}
+
+/* ================= TOP SECTION ================= */
+
+.top-section{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:20px;
+    margin-bottom:30px;
+}
+
+/* LARGE IMAGE */
+
+.large-image{
+    width:55%;
+    height:250px;
+    border:1px solid #999;
+    background:white;
+}
+
+.large-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    padding: 10px;
+}
+
+/* RIGHT CONTENT */
+
+.top-content{
+    width:40%;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.small-box{
+    width:100%;
+    height:40px;
+    border:1px solid #999;
+    background:white;
+    display:flex;
+    align-items:center;
+    padding-left:10px;
+}
+
+.text-input{
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+}
+
+.text-input input{
+    padding:10px;
+    border:1px solid #999;
+}
+
+/* ================= CARD SECTION ================= */
+
+.card-section{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-bottom:40px;
+}
+
+/* CARD */
+
+.card{
+    width:180px;
+}
+
+/* IMAGE */
+
+.card img{
+    width:100%;
+    height:220px;
+    border:1px solid #999;
+    object-fit:cover;
+    background:white;
+}
+
+/* SMALL TEXT BOX */
+
+.card-text{
+    width:100%;
+    height:20px;
+    border:1px solid #999;
+    margin-top:5px;
+    background:white;
+}
+
+/* SOCIAL ICONS */
+
+.social-icons{
+    margin-top:5px;
+    display:flex;
+    gap:10px;
+    font-size:  20px;
+}
+
+/* ================= BUTTON SECTION ================= */
+
+.button-section{
+    margin-bottom:30px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.btn{
+    width:120px;
+    padding:10px;
+    border:1px solid #999;
+    background:white;
+    cursor:pointer;
+}
+
+/* ================= VIDEO SECTION ================= */
+
+.video-section{
+    width:100%;
+    border:1px solid #999;
+    background:white;
+    padding:10px;
+}
+
+.video-section video{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+    .top-section{
+        flex-direction:column;
+    }
+
+    .large-image,
+    .top-content{
+        width:100%;
+    }
+
+    .card{
+        width:100%;
+    }
+
+}

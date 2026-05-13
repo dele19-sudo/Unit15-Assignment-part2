@@ -1,0 +1,31 @@
+body{
+    background:#111;
+    color:white;
+    font-family:Arial;
+}
+
+h1{
+    text-align:center;
+    padding:30px;
+}
+
+.events{
+    padding:40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.event{
+    display:flex;
+    gap:20px;
+    background:#222;
+    margin-bottom:20px;
+    padding:20px;
+    border-radius:10px;
+    flex-wrap:wrap;
+}
+
+.event img{
+    width:300px;
+    border-radius:10px;
+}
