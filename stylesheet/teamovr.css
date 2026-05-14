@@ -151,10 +151,12 @@ body{
 }
 
 /* ================= VIDEO SECTION ================= */
-/* .video{
+iframe{
     width: 1000px;
     height: 562px;
-} */
+    /* width= 560;
+    height= 315; */
+}
 
 /* .video-section{
     width:100%;
