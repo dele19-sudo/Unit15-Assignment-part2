@@ -74,7 +74,7 @@ h1{
     gap:10px;
 }
 
-.auth-buttons button{
+.auth-buttons a{
     padding:10px 20px;
     border:none;
     background:#ff3c3c;
@@ -82,9 +82,10 @@ h1{
     cursor:pointer;
     border-radius:5px;
     transition:0.3s;
+    transform: scale(0.3);
 }
 
-.auth-buttons button:hover{
+.auth-buttons a:hover{
     background:#ff5f5f;
     /* width: 2px; */
 }
