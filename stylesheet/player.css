@@ -130,13 +130,20 @@ iframe{
 .image-gallery{
     display:flex;
     justify-content:center;
-    gap:20px;
+    gap:25px;
     flex-wrap:wrap;
+    margin-bottom:40px;
 }
 
 /* CARD */
 .gallery-card{
     width:220px;
+    cursor: pointer;
+}
+
+.gallery-card:hover{
+    transform:translateY(-5px);
+    transform: scale(1.15);
 }
 
 /* IMAGE */
