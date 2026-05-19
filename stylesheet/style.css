@@ -9,6 +9,7 @@ body{
     font-family:Arial, sans-serif;
     background:#111;
     color:white;
+    padding:0;
 }
 
 /* ================= HEADER ================= */
@@ -74,7 +75,7 @@ h1{
     gap:10px;
 }
 
-.auth-buttons a{
+.auth-buttons button a{
     padding:10px 20px;
     border:none;
     background:#ff3c3c;
@@ -83,11 +84,16 @@ h1{
     border-radius:5px;
     transition:0.3s;
     transform: scale(0.3);
+    text-decoration: none;
 }
 
-.auth-buttons a:hover{
+.auth-buttons button a:hover{
     background:#ff5f5f;
     /* width: 2px; */
+}
+
+.auth-buttons button{
+background: none;
 }
 
 /* ================= NAVIGATION ================= */
