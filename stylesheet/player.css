@@ -179,6 +179,10 @@ h1{
 
 @media(max-width:900px){
 
+    .playerimg{
+        width: 100%;
+    }
+    
     .video-box{
         width:100%;
     }
