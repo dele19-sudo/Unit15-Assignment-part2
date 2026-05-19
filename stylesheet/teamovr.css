@@ -137,11 +137,7 @@ body{
 iframe{
     width: 90%;
     height: 580px;
-    /* padding-left: px; */
-}
-
-iframe{
-    
+    padding-left: 20px;
 }
 
 /* ================= RESPONSIVE ================= */
