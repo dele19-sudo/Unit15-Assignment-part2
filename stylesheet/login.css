@@ -37,3 +37,7 @@ body{
     color:white;
     cursor:pointer;
 }
+
+p{
+    padding-top: 10px;
+}
