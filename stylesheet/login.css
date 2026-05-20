@@ -41,3 +41,8 @@ body{
 p{
     padding-top: 10px;
 }
+
+a{
+    color: #ff4747;
+    text-decoration: none;
+}
