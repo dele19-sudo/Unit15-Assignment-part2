@@ -115,10 +115,6 @@ nav ul{
     gap:50px;
 }
 
-/* nav ul li:hover{
-    border: 2px solid #ff3c3c;
-} */
-
 nav ul li a{
     text-decoration:none;
     color:white;
