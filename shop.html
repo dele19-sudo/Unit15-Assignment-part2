@@ -35,7 +35,8 @@
 
             <!-- Search Bar -->
             <div class="search-container">
-                <input type="text" placeholder="Search...">
+                <input id="search-input" type="text" placeholder="Search...">
+                <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
 
            <!-- Basket Icon -->
@@ -70,7 +71,7 @@
 
                 <li><a href="index.html">Home</a></li>
 
-                <li><a href="shop.html">Shop</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
 
                 <li><a href="event.html">Events</a></li>
 
@@ -92,7 +93,7 @@
             <h2>Gaming Hoodie</h2>
             <br>
             <p>£40</p>
-            <button>Add to cart</button>
+            <button onclick="addToCart('Gaming Hoodie', 40)">Add to cart</button>
         </div>
 
         <div class="product">
@@ -100,9 +101,11 @@
             <h2>Gaming Mouse</h2>
             <br>
             <p>£60</p>
-            <button>Add to cart</button>
+            <button onclick="addToCart('Gaming Mouse', 60)">Add to cart</button>
         </div>
 
+        <script src="Jscript/cart.js"></script>
+        <script src="Jscript/script.js"></script>
     </section>
 
 </body>
