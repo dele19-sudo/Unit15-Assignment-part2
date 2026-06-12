@@ -1,3 +1,4 @@
+//Courasel
 let slides = document.querySelectorAll(".banner-slide");
 
 let currentSlide = 0;
@@ -24,7 +25,7 @@ function nextSlide(){
 
 setInterval(nextSlide, 4000);
 
-// Search-bar functionality
+// Search-bar 
 document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('search-input');
     const searchBtn = document.getElementById('search-btn');
@@ -90,99 +91,3 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Login Presence check
-document.addEventListener('DOMContentLoaded', function() {
-    const loginForm = document.querySelector('.form');
-    const emailInput = loginForm.querySelector('input[type="email"]');
-    const passwordInput = loginForm.querySelector('input[type="password"]');
-    const loginBtn = loginForm.querySelector('button');
-
-    loginBtn.addEventListener('click', function(e) {
-        e.preventDefault(); // Prevent default link behavior
-
-        let valid = true;
-        let message = '';
-
-        // Presence check
-        if (!emailInput.value.trim()) {
-            message += "Enter a valid Email.\n";
-            valid = false;
-        }
-        if (!passwordInput.value.trim()) {
-            message += "Enter a valid Password.\n";
-            valid = false;
-        }
-
-        // Basic email format check
-        if (emailInput.value.trim() && !emailInput.value.includes('@')) {
-            message += "Please enter a valid email address.\n";
-            valid = false;
-        }
-
-        if (!valid) {
-            alert(message);
-        } else {
-            alert("Login successful! (Demo - no real backend)");
-            window.location.href = 'index.html';
-        }
-    });
-});
-    
-//Cart
-let cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-function addToCart(productName, price) {
-    const existingItem = cart.find(item => item.name === productName);
-    
-    if (existingItem) {
-        existingItem.quantity += 1;
-    } else {
-        cart.push({
-            name: productName,
-            price: price,
-            quantity: 1
-        });
-    }
-    
-    localStorage.setItem('cart', JSON.stringify(cart));
-    alert(`${productName} added to cart!`);
-}
-
-function displayCart() {
-    const cartContainer = document.getElementById('cart-items');
-    if (!cartContainer) return;
-    
-    cartContainer.innerHTML = '';
-    let total = 0;
-
-    if (cart.length === 0) {
-        cartContainer.innerHTML = '<p>Your cart is empty.</p>';
-        return;
-    }
-
-    cart.forEach((item, index) => {
-        const itemTotal = item.price * item.quantity;
-        total += itemTotal;
-
-        cartContainer.innerHTML += `
-            <div class="cart-item">
-                <h3>${item.name}</h3>
-                <p>£${item.price} × ${item.quantity} = £${itemTotal}</p>
-                <button onclick="removeFromCart(${index})">Remove</button>
-            </div>
-        `;
-    });
-
-    cartContainer.innerHTML += `<h2>Total: £${total}</h2>`;
-}
-
-function removeFromCart(index) {
-    cart.splice(index, 1);
-    localStorage.setItem('cart', JSON.stringify(cart));
-    displayCart();
-}
-
-// Make functions available globally
-window.addToCart = addToCart;
-window.removeFromCart = removeFromCart;
-window.displayCart = displayCart;
