@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
             window.location.href = 'event.html';
         } 
         else if (query.includes('team') || 
-        query.includes('players') || 
+        query.includes('player') || 
         query.includes('Highlights') || 
         query.includes('games') ){
             window.location.href = 'teamovr.html';
