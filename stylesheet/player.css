@@ -79,6 +79,9 @@ iframe{
     font-size:25px;
     margin-top:30px;
     justify-content:center;
+}
+
+.top-socials a{
     color: white;
 }
 
